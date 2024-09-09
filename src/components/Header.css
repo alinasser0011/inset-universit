@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    background-image: url('../assets/logo.jpg');
+    background-size: contain; /* لضبط الصورة لتتناسب مع الحجم */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    background-position: left center; /* وضع الصورة على اليسار في المنتصف */
+  }
+ 
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* التأكد من أن الحاوية تأخذ العرض الكامل */
+  }
+  
+  .site-name {
+    font-size: 24px; /* حجم الخط لاسم الموقع */
+    margin: 0;
+    padding-left: 60px; /* المسافة بين الصورة واسم الموقع */
+  }
+  
+  

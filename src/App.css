@@ -1,0 +1,118 @@
+/* App.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Main app layout */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Content area */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow-y: auto;
+}
+
+/* Header layout */
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* Students Page */
+.students h1, .employees h1, .fees-payment h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.students .excel-files, .study-schedules, .student-activities, .new-student-form {
+    margin-bottom: 30px;
+}
+
+.students button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.students button:hover {
+    background-color: #27ae60;
+}
+
+/* Employees Page */
+.attendance-form, .faculty-members {
+    margin-bottom: 30px;
+}
+
+.attendance-form form, .faculty-members form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-form button, .faculty-members button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.attendance-form button:hover, .faculty-members button:hover {
+    background-color: #c0392b;
+}
+
+/* Fees Payment Page */
+.fees-payment h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.fees-payment form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.fees-payment button {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fees-payment button:hover {
+    background-color: #8e44ad;
+}

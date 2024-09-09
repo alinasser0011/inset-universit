@@ -1,0 +1,87 @@
+/* CSS للـ Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px; /* الحجم الصغير للـ sidebar */
+    height: 100%;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 21%, rgba(70,245,252,1) 100%);
+    overflow-x: hidden;
+    transition: width 0.3s; /* التأثير الانتقالي */
+    white-space: nowrap;
+    z-index: 1000; /* تأكد من أن الـ sidebar فوق باقي المحتويات */
+    transition: width 0.3s ease, box-shadow 0.3s ease; /* تأثيرات تفاعلية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* تأثير الظل */
+    animation: animate__fadeIn 1s ease; /* تأثير دخول تدريجي للـ Sidebar */
+  }
+  
+  .sidebar:hover {
+    width: 200px; /* العرض الأكبر عند التمرير */
+    background: rgb(2,0,36);
+    background: linear-gradient(77deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* زيادة الظل عند التمرير */
+  }
+  
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 21%, rgba(70,245,252,1) 100%);
+    color: white;
+    font-size: 18px;
+    transition: opacity 0.3s;
+  }
+  
+  
+/* قائمة العناصر في الـ Sidebar */
+.sidebar .menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px; /* زيادة المسافة من الأعلى */
+  animation: animate__fadeInUp 7s ease; /* تأثير دخول تدريجي للعناصر عند ظهورها */
+}
+
+/* العناصر في الـ Sidebar */
+.sidebar .menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* تأثيرات تفاعلية */
+  border-radius: 5px; /* حواف دائرية للعناصر */
+
+}
+
+/* تأثير التغيير في الخلفية ولون النص عند التمرير */
+.sidebar .menu a:hover {
+  background-color: #575757;
+  color: #f7b00d;
+  transform: scale(1.1); /* تكبير العنصر عند التمرير */
+}
+
+/* تأثير على اللوجو */
+.sidebar .logo {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #444;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* تأثيرات تفاعلية */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* تأثير على اللوجو عند التمرير */
+.sidebar .logo:hover {
+  background-color: #555;
+  transform: rotate(360deg); /* دوران اللوجو عند التمرير */
+}
+
+/* تحجيم الأيقونات داخل الـ Sidebar */
+.sidebar .menu svg {
+  margin-right: 10px;
+}

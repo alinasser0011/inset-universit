@@ -1,0 +1,51 @@
+/* تحسين عرض الجداول الدراسية */
+.schedule-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه ليصبح عمودي */
+    justify-content: space-between;
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    transition: transform 0.2s ease;
+  }
+  
+  .schedule-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .schedule-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* تأكد من استخدام العرض الكامل */
+  }
+  
+  .schedule-details span {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.6; /* تحسين المسافة بين الأسطر */
+  }
+  
+  .schedule-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+  }
+  
+  .schedule-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-actions button:hover {
+    background-color: #0056b3;
+  }
+  

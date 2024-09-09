@@ -1,0 +1,134 @@
+
+/* ملف FeesPayment.css */
+
+.fees-payment-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: #f4f6f9;
+}
+
+.payment-form {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.payment-form h2 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="number"],
+.payment-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.payment-form button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-form button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* تأثير fadeInUp للظهور السلس */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-form {
+    padding: 15px;
+  }
+
+  .payment-form h2 {
+    font-size: 1.8em;
+  }
+
+  .payment-form input,
+  .payment-form select,
+  .payment-form button {
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+/*.fees-payment-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .payment-form {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-form h2 {
+    margin-top: 0;
+  }
+  
+  .payment-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-form label {
+    margin-bottom: 15px;
+  }
+  
+  .payment-form input,
+  .payment-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .payment-form button {
+    padding: 10px 15px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }*/
+  
